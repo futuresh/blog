@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/blog/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/blog/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="你肯定有过这样的经历，当你正玩得起劲的时候，电动玩具突然没电了。更可恨的是那该死的充电器也找不到了。没办法，要么不玩了，要么出去买块新的电池。就算最后解决了，恐怕也会没有了继续玩的兴致，这种事情确实非常令人扫兴。如果我告诉你，现在有一种电池，不需要充电器，就可以直接插在USB插孔上充电，你是不是会觉得很神奇？没错，就是这款USB电池。 哎，我已经不只一次地提到“21世纪是USB的世纪！”所以以后">
+<meta name="keywords" content="高人口密度 城市  研究 发明 设计 创新 技术 方案 实施">
+<meta property="og:type" content="article">
+<meta property="og:title" content=" USB电池">
+<meta property="og:url" content="https://futuresh.github.io/blog/2012/01/21/USB电池/index.html">
+<meta property="og:site_name" content="开元未来- Futuresh - Labs">
+<meta property="og:description" content="你肯定有过这样的经历，当你正玩得起劲的时候，电动玩具突然没电了。更可恨的是那该死的充电器也找不到了。没办法，要么不玩了，要么出去买块新的电池。就算最后解决了，恐怕也会没有了继续玩的兴致，这种事情确实非常令人扫兴。如果我告诉你，现在有一种电池，不需要充电器，就可以直接插在USB插孔上充电，你是不是会觉得很神奇？没错，就是这款USB电池。 哎，我已经不只一次地提到“21世纪是USB的世纪！”所以以后">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://www.patent-cn.com/wp-content/uploads/2007/05/102508_827470642_m.jpg">
+<meta property="og:image" content="http://www.patent-cn.com/wp-content/uploads/2007/05/102509_1044479381_m.jpg">
+<meta property="og:image" content="http://www.patent-cn.com/wp-content/uploads/2007/05/102509_1649217115_m.jpg">
+<meta property="og:image" content="http://www.patent-cn.com/wp-content/uploads/2007/05/102509_133946718_m.jpg">
+<meta property="og:image" content="http://www.patent-cn.com/wp-content/uploads/2007/05/102510_1855778046_m.jpg">
+<meta property="og:image" content="http://www.patent-cn.com/wp-content/uploads/2007/05/102510_2132982053_m.jpg">
+<meta property="og:image" content="http://www.patent-cn.com/wp-content/uploads/2007/05/102511_1142974881_m.jpg">
+<meta property="og:updated_time" content="2018-07-24T07:27:08.927Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content=" USB电池">
+<meta name="twitter:description" content="你肯定有过这样的经历，当你正玩得起劲的时候，电动玩具突然没电了。更可恨的是那该死的充电器也找不到了。没办法，要么不玩了，要么出去买块新的电池。就算最后解决了，恐怕也会没有了继续玩的兴致，这种事情确实非常令人扫兴。如果我告诉你，现在有一种电池，不需要充电器，就可以直接插在USB插孔上充电，你是不是会觉得很神奇？没错，就是这款USB电池。 哎，我已经不只一次地提到“21世纪是USB的世纪！”所以以后">
+<meta name="twitter:image" content="http://www.patent-cn.com/wp-content/uploads/2007/05/102508_827470642_m.jpg">
+
+
+
+  <link rel="alternate" href="/blog/atom.xml" title="开元未来- Futuresh - Labs" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://futuresh.github.io/blog/2012/01/21/USB电池/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title> USB电池 | 开元未来- Futuresh - Labs</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="/images/big-logo.png"
+               alt="开元未来- Futuresh - Labs"/>
+        </a>
+      </div>
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/blog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">开元未来- Futuresh - Labs</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">预见未来的最好方式就是亲自开元未来！</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="http:/futuresh.org" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/blog/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/blog/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/blog/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://futuresh.github.io/blog/blog/2012/01/21/USB电池/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Futuresh">
+      <meta itemprop="description" content="针对高人口密度城市，研究可持续发展模式的技术解决方案并实施。">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="开元未来- Futuresh - Labs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"> USB电池
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2012-01-21 07:04:38" itemprop="dateCreated datePublished" datetime="2012-01-21T07:04:38+08:00">2012-01-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-24 15:27:08" itemprop="dateModified" datetime="2018-07-24T15:27:08+08:00">2018-07-24</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/电池/" itemprop="url" rel="index"><span itemprop="name">电池</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://www.patent-cn.com/wp-content/uploads/2007/05/102508_827470642_m.jpg" alt=""></p>
+<p>你肯定有过这样的经历，当你正玩得起劲的时候，电动玩具突然没电了。更可恨的是那该死的充电器也找不到了。没办法，要么不玩了，要么出去买块新的电池。就算最后解决了，恐怕也会没有了继续玩的兴致，这种事情确实非常令人扫兴。如果我告诉你，现在有一种电池，不需要充电器，就可以直接插在USB插孔上充电，你是不是会觉得很神奇？没错，就是这款USB电池。</p>
+<p>哎，我已经不只一次地提到“21世纪是USB的世纪！”所以以后出现任何跟USB有关的东西，只要记住小编这句话就不会觉得过于出乎意料了。</p>
+<p>这款电池每包里面有两个，均为镍氢电池，1.2V,1300毫安时。目前只有7号5号电池一款，不过陆续将会推出5号7号电池甚至手机电池。</p>
+<p><img src="http://www.patent-cn.com/wp-content/uploads/2007/05/102509_1044479381_m.jpg" alt=""></p>
+<p><img src="http://www.patent-cn.com/wp-content/uploads/2007/05/102509_1649217115_m.jpg" alt=""></p>
+<p>打眼一看，跟普通电池没有什么区别，甚至可以说是完全一样。<br><img src="http://www.patent-cn.com/wp-content/uploads/2007/05/102509_133946718_m.jpg" alt=""></p>
+<p>不过，电池的正极实际上是一个帽，当你将这个帽拆下就会看到这款电池的秘密所在了，一个完整的USB插头。</p>
+<p><img src="http://www.patent-cn.com/wp-content/uploads/2007/05/102510_1855778046_m.jpg" alt=""></p>
+<p>帽并不能与电池本身完全分开，而是用连在一起，以免您不小心弄丢了帽，那这个电池就彻底报废了。</p>
+<p><img src="http://www.patent-cn.com/wp-content/uploads/2007/05/102510_2132982053_m.jpg" alt=""></p>
+<p>要充电时，只需要将电池插到任意一个USB接口里即可。充电时，绿灯将会亮起，当充电达到90%时，LED灯就会不停闪烁。当全部充满时，就会自动熄灭。（通常用USB接口充电大概需要5小时即可充满）。</p>
+<p><img src="http://www.patent-cn.com/wp-content/uploads/2007/05/102511_1142974881_m.jpg" alt=""></p>
+<p>当然，也可以像普通的充电电池那样，用充电器来充电。</p>
+<p>总之，这款电池确实是非常方便实用。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2012/01/21/新颖的直立自行车/" rel="next" title=" 新颖的直立自行车">
+                <i class="fa fa-chevron-left"></i>  新颖的直立自行车
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2012/01/21/可多次使用的方便筷子/" rel="prev" title=" 可多次使用的方便筷子">
+                 可多次使用的方便筷子 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Futuresh</p>
+              <p class="site-description motion-element" itemprop="description">针对高人口密度城市，研究可持续发展模式的技术解决方案并实施。</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/blog/archives/">
+                
+                    <span class="site-state-item-count">998</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/blog/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/blog/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">71</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/blog/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <!-- google ad  -->
+			
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3026165508573008",
+          enable_page_level_ads: true
+     });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122709816-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122709816-1');
+</script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Futuresh</span>
+
+  
+
+  
+</div>
+
+
+开元未来 2011-2018 All rights reserved.
+
+  <div class="powered-by"> <a class="theme-link" target="_blank" href="">Hexo</a>  v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
